@@ -24,34 +24,42 @@
 
 
                             <!-- Слайдер BODY -->
-                            <div class=" flex-1 min-h-96 mb-2 p-3">
-                            <label for="" class="inline-block mb-3 text-sm text-gray-400 px-4">Разделы</label>
+                            <div class=" flex-1 min-h-96 mb-2 p-1">
+                            <label for="" class="inline-block mb-1 text-xs text-gray-400 px-4">Разделы</label>
                                 <ul class=" block flex-col mb-2">
                                      <!-- BODY Раздел 1 -->
-                                    <li class="flex-row mb-2 hover:bg-gray-200 h-14 rounded-lg flex justify-between items-center px-4">
-                                        <p class="text-gray-600">Раздел 1</p>
-                                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M12.172 12L9.343 9.173l1.415-1.414L15 12l-4.242 4.242l-1.415-1.414z"/></svg>
-                                    </li>
+                                    <router-link to="/">
+                                        <li @click="defaultStore.toggleSidebar" class="flex-row mb-2 hover:bg-gray-200 h-12 rounded-lg flex justify-between items-center px-4">
+                                            <p class="text-gray-600">Главная</p>
+                                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M12.172 12L9.343 9.173l1.415-1.414L15 12l-4.242 4.242l-1.415-1.414z"/></svg>
+                                        </li>
+                                    </router-link>
                                     <!-- BODY Раздел 2 -->
-                                    <li class="flex-row mb-2 hover:bg-gray-200 h-14 rounded-lg flex justify-between items-center px-4">
-                                        <p class="text-gray-600">Раздел 2</p>
-                                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M12.172 12L9.343 9.173l1.415-1.414L15 12l-4.242 4.242l-1.415-1.414z"/></svg>
-                                    </li>
+                                    <router-link to="/page2">
+                                        <li @click="defaultStore.toggleSidebar" class="flex-row mb-2 hover:bg-gray-200 h-12 rounded-lg flex justify-between items-center px-4">
+                                            <p class="text-gray-600">Раздел 1</p>
+                                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M12.172 12L9.343 9.173l1.415-1.414L15 12l-4.242 4.242l-1.415-1.414z"/></svg>
+                                        </li>
+                                    </router-link>
                                     <!-- BODY Раздел 3 -->
-                                    <li class="flex-row mb-2 hover:bg-gray-200 h-14 rounded-lg flex justify-between items-center px-4">
-                                        <p class="text-gray-600">Раздел 3</p>
-                                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M12.172 12L9.343 9.173l1.415-1.414L15 12l-4.242 4.242l-1.415-1.414z"/></svg>
-                                    </li>
+                                    <router-link to="/page3">
+                                        <li @click="defaultStore.toggleSidebar" class="flex-row mb-2 hover:bg-gray-200 h-12 rounded-lg flex justify-between items-center px-4">
+                                            <p class="text-gray-600">Раздел 2</p>
+                                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#888888" d="M12.172 12L9.343 9.173l1.415-1.414L15 12l-4.242 4.242l-1.415-1.414z"/></svg>
+                                        </li>
+                                    </router-link>
                                 </ul>
                             </div>
 
 
                             <!-- Cлайдер FOOTER bg-gray-300-->
                             <div class="h-20">
+
                             </div>
                         </div>
                     </div>
                 </div>
+
          <!-- Затемнение -->
         <div @click="defaultStore.toggleSidebar" v-if="defaultStore.isOpen" class="fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-1000"></div>
     </div>
