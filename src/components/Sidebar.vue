@@ -53,7 +53,7 @@
 
 
                             <!-- Cлайдер FOOTER bg-gray-300-->
-                            <div class="h-20">
+                            <div class="h-14 bg-gray-300 mb-6 rounded-xl">
 
                             </div>
                         </div>

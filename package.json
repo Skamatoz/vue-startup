@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@glideapps/tables": "^1.0.21",
+    "@supabase/supabase-js": "^2.46.1",
     "pinia": "^2.2.6",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
