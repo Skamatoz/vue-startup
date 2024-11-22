@@ -1,66 +1,36 @@
 <template>
-  <div>
-  <h1 class="m-4 text-xl font-semibold text-gray-700">День 2</h1>
+  <div class="">
+    <h1 class="m-4 text-xl font-semibold text-gray-700">День 2</h1>
 
-  <div class="flex  border-2 border-gray-200 p-4 w-auto m-4 rounded-xl gap-3">
-      <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#5c5c5c" d="M4.25 18.3q-.95-1.1-1.525-2.45T2 13h2.05q.15 1.1.55 2.088T5.65 16.9zM2 11q.2-1.5.75-2.85t1.5-2.45l1.4 1.4Q5 7.925 4.6 8.913T4.05 11zm8.95 10.95q-1.5-.15-2.837-.725T5.65 19.75l1.4-1.45q.875.65 1.838 1.075t2.062.575zM7.1 5.7L5.65 4.25q1.125-.9 2.463-1.475T11 2.05v2q-1.125.15-2.1.575T7.1 5.7m2.4 10.8v-9l7 4.5zm3.5 5.45v-2q3.025-.425 5.013-2.675T20 12t-1.987-5.275T13 4.05v-2q3.85.425 6.425 3.25T22 12t-2.575 6.7T13 21.95"/></svg>
-      </div>
-      <div class="flex items-center">
-          <h2>День 2. Тренировка 1</h2>
-      </div>
-  </div>
+    <div v-for="item in arrayForTest" :key="item.id"  class=" bg-PoscetFon flex border-2 border-gray-200 p-4 w-auto m-4 rounded gap-3">
+        <div class="text-gray-500 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m10.95 14l4.95-4.95l-1.425-1.4l-3.525 3.525L9.525 9.75L8.1 11.175zM5 21V3h14v18l-7-3zm2-3.05l5-2.15l5 2.15V5H7zM7 5h10z"/></svg>        </div>
+        <div class="flex items-center">
+            <h2>{{item.value}}</h2>
+        </div>
+    </div>
 
-  <div class="flex  border-2 border-gray-200 p-4 w-auto m-4 rounded-xl gap-3">
-      <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#5c5c5c" d="M4.25 18.3q-.95-1.1-1.525-2.45T2 13h2.05q.15 1.1.55 2.088T5.65 16.9zM2 11q.2-1.5.75-2.85t1.5-2.45l1.4 1.4Q5 7.925 4.6 8.913T4.05 11zm8.95 10.95q-1.5-.15-2.837-.725T5.65 19.75l1.4-1.45q.875.65 1.838 1.075t2.062.575zM7.1 5.7L5.65 4.25q1.125-.9 2.463-1.475T11 2.05v2q-1.125.15-2.1.575T7.1 5.7m2.4 10.8v-9l7 4.5zm3.5 5.45v-2q3.025-.425 5.013-2.675T20 12t-1.987-5.275T13 4.05v-2q3.85.425 6.425 3.25T22 12t-2.575 6.7T13 21.95"/></svg>
-      </div>
-      <div class="flex items-center">
-          <h2>День 2. Тренировка 2</h2>
-      </div>
-  </div>
 
-  <div class="flex  border-2 border-gray-200 p-4 w-auto m-4 rounded-xl gap-3">
-      <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#5c5c5c" d="M4.25 18.3q-.95-1.1-1.525-2.45T2 13h2.05q.15 1.1.55 2.088T5.65 16.9zM2 11q.2-1.5.75-2.85t1.5-2.45l1.4 1.4Q5 7.925 4.6 8.913T4.05 11zm8.95 10.95q-1.5-.15-2.837-.725T5.65 19.75l1.4-1.45q.875.65 1.838 1.075t2.062.575zM7.1 5.7L5.65 4.25q1.125-.9 2.463-1.475T11 2.05v2q-1.125.15-2.1.575T7.1 5.7m2.4 10.8v-9l7 4.5zm3.5 5.45v-2q3.025-.425 5.013-2.675T20 12t-1.987-5.275T13 4.05v-2q3.85.425 6.425 3.25T22 12t-2.575 6.7T13 21.95"/></svg>
-      </div>
-      <div class="flex items-center">
-          <h2>День 2. Тренировка 3</h2>
-      </div>
-  </div>
-
-  <div class="flex  border-2 border-gray-200 p-4 w-auto m-4 rounded-xl gap-3">
-      <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#5c5c5c" d="M4.25 18.3q-.95-1.1-1.525-2.45T2 13h2.05q.15 1.1.55 2.088T5.65 16.9zM2 11q.2-1.5.75-2.85t1.5-2.45l1.4 1.4Q5 7.925 4.6 8.913T4.05 11zm8.95 10.95q-1.5-.15-2.837-.725T5.65 19.75l1.4-1.45q.875.65 1.838 1.075t2.062.575zM7.1 5.7L5.65 4.25q1.125-.9 2.463-1.475T11 2.05v2q-1.125.15-2.1.575T7.1 5.7m2.4 10.8v-9l7 4.5zm3.5 5.45v-2q3.025-.425 5.013-2.675T20 12t-1.987-5.275T13 4.05v-2q3.85.425 6.425 3.25T22 12t-2.575 6.7T13 21.95"/></svg>
-      </div>
-      <div class="flex items-center">
-          <h2>День 2. Тренировка 4</h2>
-      </div>
-  </div>
-
-  <div class="flex  border-2 border-gray-200 p-4 w-auto m-4 rounded-xl gap-3">
-      <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#5c5c5c" d="M4.25 18.3q-.95-1.1-1.525-2.45T2 13h2.05q.15 1.1.55 2.088T5.65 16.9zM2 11q.2-1.5.75-2.85t1.5-2.45l1.4 1.4Q5 7.925 4.6 8.913T4.05 11zm8.95 10.95q-1.5-.15-2.837-.725T5.65 19.75l1.4-1.45q.875.65 1.838 1.075t2.062.575zM7.1 5.7L5.65 4.25q1.125-.9 2.463-1.475T11 2.05v2q-1.125.15-2.1.575T7.1 5.7m2.4 10.8v-9l7 4.5zm3.5 5.45v-2q3.025-.425 5.013-2.675T20 12t-1.987-5.275T13 4.05v-2q3.85.425 6.425 3.25T22 12t-2.575 6.7T13 21.95"/></svg>
-      </div>
-      <div class="flex items-center">
-          <h2>День 2. Тренировка 5</h2>
-      </div>
-  </div>
-
-  <div class="flex  border-2 border-gray-200 p-4 w-auto m-4 rounded-xl gap-3">
-      <div class="">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#5c5c5c" d="M4.25 18.3q-.95-1.1-1.525-2.45T2 13h2.05q.15 1.1.55 2.088T5.65 16.9zM2 11q.2-1.5.75-2.85t1.5-2.45l1.4 1.4Q5 7.925 4.6 8.913T4.05 11zm8.95 10.95q-1.5-.15-2.837-.725T5.65 19.75l1.4-1.45q.875.65 1.838 1.075t2.062.575zM7.1 5.7L5.65 4.25q1.125-.9 2.463-1.475T11 2.05v2q-1.125.15-2.1.575T7.1 5.7m2.4 10.8v-9l7 4.5zm3.5 5.45v-2q3.025-.425 5.013-2.675T20 12t-1.987-5.275T13 4.05v-2q3.85.425 6.425 3.25T22 12t-2.575 6.7T13 21.95"/></svg>
-      </div>
-      <div class="flex items-center">
-          <h2>День 2. Тренировка 6</h2>
-      </div>
-  </div>
     <!-- <router-link to="/page2">Перейти ко второй странице</router-link> -->
   </div>
 </template>
 
-<script>
+<script >
+import { ref } from 'vue';
 export default {
-  name: 'Page3'
-};
+  name: 'Page3',
+setup() {
+    const arrayForTest = ref([
+      { id: 1, value: 'День 2. Занятие 1' },
+      { id: 2, value: 'День 2. Занятие 2' },
+      { id: 3, value: 'День 2. Занятие 3' },
+      { id: 4, value: 'День 2. Занятие 4' },
+      { id: 5, value: 'День 2. Занятие 5' }
+    ])
+
+    return {
+      arrayForTest,
+    }
+  }
+}
 </script>
