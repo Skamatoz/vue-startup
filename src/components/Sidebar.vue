@@ -24,7 +24,7 @@
 
 
                             <!-- Слайдер BODY -->
-                            <div class=" flex-1 min-h-96 mb-2 p-1">
+                            <div class=" flex-1 min-h-72 mb-2 p-1">
                             <label for="" class="inline-block mb-1 text-xs text-gray-400 px-2">Разделы</label>
                                 <ul class=" block flex-col mb-2">
                                      <!-- BODY Раздел 1 -->
